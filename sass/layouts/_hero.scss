@@ -50,9 +50,9 @@
   padding: 10px 32px;
 
   transition: background-color 250ms var(--animation-function);
-}
 
-.hero__button:hover,
-.hero__button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

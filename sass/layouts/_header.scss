@@ -25,10 +25,10 @@
 
 .main-nav__item {
   margin-right: 50px;
-}
 
-.main-nav__item:last-child {
-  margin-left: 0;
+  &:last-child {
+    margin-left: 0;
+  }
 }
 
 .main-nav__link {
@@ -44,27 +44,27 @@
   padding-bottom: 32px;
 
   transition: color 250ms var(--animation-function);
-}
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .main-nav__link--current {
   display: block;
   color: var(--accent-color);
-}
 
-.main-nav__link--current:after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 /* Контакты в шапке */
@@ -77,9 +77,10 @@
 
 .nav-contacts__item {
   margin-right: 50px;
-}
-.nav-contacts__item:last-child {
-  margin-right: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .nav-contacts__contact {
@@ -95,12 +96,12 @@
 
   transition: color 250ms var(--animation-function),
     fill 250ms var(--animation-function);
-}
 
-.nav-contacts__contact:hover,
-.nav-contacts__contact:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
 .nav-contacts__icon {

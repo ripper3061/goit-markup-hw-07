@@ -4,11 +4,12 @@
 
 .clients-list__item {
   margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.clients-list__item:last-child {
-  margin-right: 0;
-}
 .clients-list__link {
   display: inline-flex;
   align-items: center;
@@ -24,10 +25,10 @@
 
   transition: border 250ms var(--animation-function),
     fill 250ms var(--animation-function);
-}
 
-.clients-list__link:hover,
-.clients-list__link:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

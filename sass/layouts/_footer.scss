@@ -53,10 +53,10 @@
 
 .contacts-list__item {
   margin-right: 10px;
-}
 
-.contacts-list__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .contacts-list {
@@ -75,18 +75,19 @@
   fill: var(--primary-white-color);
 
   transition: background-color 250ms var(--animation-function);
-}
 
-.contacts-list__link:hover,
-.contacts-list__link:focus {
-  background-color: var(--accent-color);
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
 }
 
 /* -------footer form--------- */
 .footer-form {
   margin-left: auto;
 }
+
 .footer-form__title {
   color: var(--primary-white-color);
   font-weight: bold;
@@ -117,16 +118,17 @@
   letter-spacing: 0.03em;
 
   transition: border-color 250ms var(--animation-function);
-}
-.footer-form__input-mail:focus-within {
-  border-color: #979797;
-}
-.footer-form__input-mail::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  &:focus-within {
+    border-color: #979797;
+  }
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-form__button {
@@ -152,6 +154,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .footer-form__button-icon {
@@ -168,8 +175,3 @@
   background-image: url('../images/icon-send.svg');
   background-size: contain;
 } */
-
-.footer-form__button:hover,
-.footer-form__button:focus {
-  background-color: #188ce8;
-}

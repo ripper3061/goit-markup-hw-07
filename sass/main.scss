@@ -1,7 +1,14 @@
+@import './utils/variables';
+@import './base/normalize';
+@import './utils/visually-hidden';
+@import './base/bcg-text';
+@import './base/container';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/our-features';
+@import './layouts/our-works';
 @import './layouts/team';
 @import './layouts/clients';
+@import './layouts/portfolio-buttons';
 @import './layouts/portfolio-section';
 @import './layouts/footer';
