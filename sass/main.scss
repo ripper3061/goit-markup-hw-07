@@ -2,7 +2,10 @@
 @import './base/normalize';
 @import './utils/visually-hidden';
 @import './base/bcg-text';
+@import './base/section';
+@import './base/section-title';
 @import './base/container';
+
 @import './components/header';
 @import './components/hero';
 @import './components/our-features';
@@ -12,3 +15,6 @@
 @import './components/portfolio-buttons';
 @import './components/portfolio-section';
 @import './components/footer';
+
+@import './components/backdrop-modal';
+@import './components/modal-form';
